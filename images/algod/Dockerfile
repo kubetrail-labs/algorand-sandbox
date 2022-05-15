@@ -1,9 +1,9 @@
-ARG GO_VERSION=1.17.5
+ARG GO_VERSION=1.18.2
 FROM golang:$GO_VERSION
 
-ARG CHANNEL=nightly
-ARG URL=
-ARG BRANCH=
+ARG CHANNEL=
+ARG URL="https://github.com/algorand/go-algorand"
+ARG BRANCH="master"
 ARG SHA=
 
 # When these are set attempt to connect to a network.
